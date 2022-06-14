@@ -1,3 +1,4 @@
+
 // TAREA 1 FUNCIONES VARIABLES
 
 // CREA TRES FUNCIONES PARA CALCULAR EL AREA DE UN CUADRADO, DE UN RECTANGULO Y UN TRIANGULO
@@ -6,19 +7,29 @@
 // ladocuadrado etc
 // CREAR UN FUNCION QUE IMPRIMA LOS VALORES
 
-const ladoCuadrado = 2;
+let ladocuadrado = 8;
+let ladoRectangulo1 = 15;
+let ladoRectangulo2 = 80;
+let baseTriangulo = 30;
+let alturaTriangulo = 47;
 
-const ladoRectangulo1 = 3;
-const ladoRectangulo2 = 2;
-
-function calcularAreaCuadrado(lado) {
-  return lado * lado;
+//cuadradrArea
+function areaCuadrado(valor1,valor2) {
+    return (valor1 * valor2);
 }
 
-function imprimirValor(resultado) {
-  console.log(resultado);
+console.log(`El área del cuadrado es: ${areaCuadrado(2,5)}`);
+
+//rectanguloArea
+function areaRectangulo(lado1, lado2) {
+    return (lado1 * lado2);
 }
 
-// const resultado = calcularAreaCuadrado(ladoCuadrado);
-// imprimirValor(resultado);
-imprimirValor(calcularAreaCuadrado(ladoCuadrado));
+console.log(`El área del rectangulo es: ${areaRectangulo(258, 210000)}`);
+
+//trianguloArea
+function areaTriangulo(base, altura) {
+    return ((base * altura)/2);
+}
+
+console.log(`El área del triangulo es: ${areaTriangulo(10,10)}`);
